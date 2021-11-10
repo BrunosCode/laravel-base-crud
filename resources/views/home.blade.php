@@ -1,4 +1,6 @@
-@extends('layout.base')
+@extends("layout.base")
+
+@section("title", "Page Title")
 
 @section("pageContent")
 <main class="c-main">
@@ -7,3 +9,4 @@
     @include('partials.shopBanner')
 </main>
 @endsection
+        

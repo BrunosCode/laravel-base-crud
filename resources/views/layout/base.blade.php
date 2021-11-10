@@ -8,12 +8,13 @@
   <title>Laravel Base Crud</title>
 </head>
 <body>
+  @include('partials.header')
   
   <main>
-    <div class="container">
       @yield('pageContent')
-    </div>
   </main>
+
+  @include('partials.footer')
 
   <script src="{{ asset("js/app.js") }}"></script>
 
