@@ -8,6 +8,15 @@ use Exception;
 
 class ComicController extends Controller
 {
+    protected $validationRules = [
+        'title' => 'required|max:70',
+        'description' => '',
+        'thumb' => 'nullable|url',
+        'price' => 'required|numeric',
+        'series' => 'required|max:20',
+        'sale_date' => 'date',
+        'type' => 'required|max:20'
+    ];
     /**
      * Display a listing of the resource.
      *
@@ -38,6 +47,8 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate($this->validationRules);
+
         $data = $request->all();
 
         // $newComic = new Comic();
@@ -86,6 +97,8 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        $request->validate($this->validationRules);
+
         $data = $request->all();
 
         $comic->update($data);

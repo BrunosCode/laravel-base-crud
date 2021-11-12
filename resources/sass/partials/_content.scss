@@ -139,6 +139,12 @@
         padding: .5rem 1rem;
         border-radius: 1rem;
     }
+
+    &__error {
+        color: red;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
 }
 
 .c-control {
@@ -176,6 +182,7 @@
         }
         &--yellow {
             background-color: yellow;
+            color: black;
         }
         &--green {
             background-color: green;

@@ -284,6 +284,11 @@
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
+.c-form__error {
+  color: red;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 
 .c-control__bar {
   position: fixed;
@@ -316,6 +321,7 @@
 }
 .c-control__btn--yellow {
   background-color: yellow;
+  color: black;
 }
 .c-control__btn--green {
   background-color: green;
