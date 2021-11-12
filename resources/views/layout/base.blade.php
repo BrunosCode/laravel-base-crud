@@ -8,6 +8,7 @@
   <title>Laravel Base Crud</title>
 </head>
 <body>
+  @include('partials.controlBar')
   @include('partials.header')
   
   <main>

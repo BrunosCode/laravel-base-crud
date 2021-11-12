@@ -113,6 +113,8 @@
 }
 
 .c-form {
+    padding: 1rem 0;
+    
     &__label {
         font-size: 1.25rem;
         margin-right: 1rem;
@@ -136,5 +138,47 @@
         color: white;
         padding: .5rem 1rem;
         border-radius: 1rem;
+    }
+}
+
+.c-control {
+
+    &__bar {
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom: .2rem solid $primary;
+        background-color: white;
+        color: $primary;
+        padding: .5rem 0;
+    }
+
+    &__card {
+        border: .2rem solid $primary;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    &__btn {
+        background-color: $primary;
+        color: white;
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .875rem;
+
+        &--red {
+            background-color: red;
+        }
+        &--yellow {
+            background-color: yellow;
+        }
+        &--green {
+            background-color: green;
+        }
     }
 }
