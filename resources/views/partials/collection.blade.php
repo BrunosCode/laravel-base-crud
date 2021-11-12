@@ -4,7 +4,7 @@
 
     @foreach (config("comics") as $index => $comic)
     <div class="c-comic l-col">
-      <a href="#" class="c-btn">
+      <a href="{{ route("comics.show", $index + 1) }}" class="c-btn">
           <div class="c-comic__squaredCover">
               <img src="{{ $comic["thumb"] }}"
               alt={{ $comic["series"] }} class="c-comic__squaredImg">

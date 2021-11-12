@@ -43,7 +43,7 @@
       <input class="c-form__input" type="text" id="type" name="type" placeholder="Insert Type">
     </div>
   
-    <button class="c-btn c-form__btn" type="submit">Create</button>
+    <button class="c-btn c-form__btn c-control__btn--green" type="submit">Create</button>
     </form>
 </div>
 @endsection

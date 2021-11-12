@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Comic;
+use Exception;
 
 class ComicController extends Controller
 {
@@ -73,7 +74,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        return view("comic.edit", compact("comic"));
+        return view("comics.edit", compact("comic"));
     }
 
     /**
